@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#ef2b2d" name="theme-color"/>
+<meta content="Pythonのリストを復習する50分の自習課題。添字・append・len・random.choiceで宝箱ゲームを作ろう。" name="description"/>
+<title>リストを復習しよう！｜Python コーディング自習課題</title>
+<link href="./favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="./styles.css" rel="stylesheet"/>
+<script defer="" src="./app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ移動</a>
+<header class="site-header"><div class="site-header__inner"><div aria-label="プログラミング自習課題" class="brand"><span aria-hidden="true" class="brand__mark">P</span><span><strong>プログラミング 自習課題</strong><small>オンライン教室</small></span></div><nav aria-label="ページメニュー" class="main-nav"><a class="nav-button" href="https://tech-nexus.jp" rel="noopener noreferrer" target="_blank">TechNexus</a><a aria-current="page" class="nav-button is-active" href="#main">コーディング課題</a></nav></div></header>
+<main class="page-shell" id="main">
+<section aria-labelledby="page-title" class="intro">
+<p class="eyebrow">PYTHON · SELF STUDY</p>
+<h1 id="page-title">リストを<span>使いこなそう！</span></h1>
+<p class="lead">授業で学んだ <code>リスト</code>・<code>添字</code>・<code>append()</code>・<code>len()</code> を復習しよう。<br class="desktop-break"/>最後は、ランダムなアイテムが出てくる「宝箱」を作るよ！</p>
+<div aria-label="自習課題の概要" class="intro-pills"><span>時間の目安 <strong>50分</strong></span><span>基本問題 <strong>3問</strong></span><span>演習問題 <strong>1問</strong></span><span>チャレンジ <strong>2問</strong></span></div>
+<div class="start-actions"><a class="button button--primary" href="#q1">問題①から始める <span aria-hidden="true">→</span></a><a class="button button--secondary" href="https://tech-nexus.jp" rel="noopener noreferrer" target="_blank">TechNexusを開く <span aria-hidden="true">↗</span></a></div>
+</section>
+<section aria-label="今回のゴールと進め方" class="guide-bar"><div class="goal-copy"><span class="goal-label">今日のゴール</span><p><strong>リストを作り、データを取り出したり追加したりできるようになろう。</strong></p><p>まずは基本問題①〜③ができればOK。余裕があれば、宝箱ゲームにも挑戦しよう！</p></div><div aria-label="学習の流れ" class="steps-mini"><span>考える</span><b>→</b><span>書く</span><b>→</b><span>実行</span><b>→</b><span>直す</span></div></section>
+<div class="learning-layout"><div class="main-column">
+<section aria-labelledby="review-title" class="review section-card" id="review">
+<div class="section-label">REVIEW</div><h2 id="review-title">最初に、リストの復習</h2><p class="quiet">書き方を忘れたら、ここを見返してOK！</p>
+<div class="reference-grid">
+<div class="reference-wide"><code>items = ["剣", "盾", "薬草"]</code><span>3つのデータを1つのリストにまとめる</span></div>
+<div><code>items[0]</code><span>最初のデータを取り出す（添字は0から）</span></div>
+<div><code>items[1]</code><span>2番目のデータを取り出す</span></div>
+<div><code>items.append("宝石")</code><span>リストの最後に追加する</span></div>
+<div><code>len(items)</code><span>リストの要素数を調べる</span></div>
+<div class="reference-wide"><code>random.choice(items)</code><span>リストからランダムに1つ選ぶ（<code>import random</code> が必要）</span></div>
+</div>
+<p class="review-note"><strong>ポイント：リストの添字は0から始まるよ！</strong> 3つのデータなら、添字は <code>0</code>・<code>1</code>・<code>2</code>。授業のコードを見返してもOK。</p>
+</section>
+<section aria-labelledby="basic-title" class="section-start" id="basic"><p class="eyebrow">BASIC / 基本問題</p><h2 id="basic-title">まずは、リストを使ってみよう</h2><p>問題文と出力例を確認して、TechNexusで実行しよう。分からないときはヒントを開いてね。</p></section>
+<article aria-labelledby="q1-title" class="problem" data-problem="q1" id="q1">
+<header class="problem__header"><span class="number-box">01</span><div><p class="problem__type">基本問題 · リストの作成</p><h3 id="q1-title">アイテムリストを作ろう</h3></div><span class="time-chip">約5分</span></header>
+<div class="problem__body"><p class="task-lead">ゲームの持ち物として、<strong>「剣」「盾」「薬草」</strong>をまとめたリストを作ろう。</p>
+<div class="task-instructions"><h4>作るプログラムの条件</h4><ol><li><code>items</code> という名前のリストを作る</li><li>リストには <strong>「剣」「盾」「薬草」</strong>をこの順番で入れる</li><li><code>print(items)</code> でリスト全体を表示する</li></ol></div>
+<div class="sample"><span class="sample__label">出力例</span><pre><code>['剣', '盾', '薬草']</code></pre></div>
+<div class="try-box"><span class="try-box__title">できたら試そう</span><p>「薬草」を自分の好きなアイテム名に変えて実行してみよう。</p></div>
+<div class="hints"><details><summary>ヒント①　リストの書き方を思い出そう</summary><p>リストは <code>[ ]</code> を使い、データをカンマ <code>,</code> で区切るよ。文字列は <code>" "</code> で囲もう。</p></details><details><summary>ヒント②　コードを確認しよう</summary><pre><code>items = ["剣", "盾", "薬草"]
+print(items)</code></pre><p>表示される <code>[ ]</code> や <code>'</code> も、Pythonがリストを表示するときの普通の形だよ。</p></details></div>
+</div><footer class="problem__footer"><label class="complete"><input data-complete="q1" type="checkbox"/><span>動かせた！</span></label><a class="next-link" href="#q2">次は問題②へ <span aria-hidden="true">→</span></a></footer></article>
+<article aria-labelledby="q2-title" class="problem" data-problem="q2" id="q2">
+<header class="problem__header"><span class="number-box">02</span><div><p class="problem__type">基本問題 · 添字</p><h3 id="q2-title">アイテムを取り出そう</h3></div><span class="time-chip">約7分</span></header>
+<div class="problem__body"><p class="task-lead">リストに入っているアイテムのうち、<strong>最初の「剣」と3番目の「薬草」</strong>だけを表示しよう。</p>
+<div class="task-instructions"><h4>作るプログラムの条件</h4><ol><li>問題①と同じ <code>items</code> のリストを使う</li><li><strong>添字</strong>を使い、<code>items</code> から「剣」を取り出す</li><li>同じ方法で「薬草」も取り出し、2行で表示する</li></ol></div>
+<div class="sample"><span class="sample__label">出力例</span><pre><code>剣
+薬草</code></pre></div>
+<div class="try-box"><span class="try-box__title">できたら試そう</span><p>2番目のアイテム「盾」だけを表示するには、添字をいくつにすればいいかな？</p></div>
+<div class="hints"><details><summary>ヒント①　添字は何から始まる？</summary><p>Pythonの添字は <strong>0から</strong>。最初が <code>items[0]</code>、2番目が <code>items[1]</code>、3番目が <code>items[2]</code> だよ。</p></details><details><summary>ヒント②　表示する部分を確認しよう</summary><pre><code>print(items[0])
+print(items[2])</code></pre><p>問題①のリストを作るコードの下に追加してみよう。</p></details></div>
+</div><footer class="problem__footer"><label class="complete"><input data-complete="q2" type="checkbox"/><span>動かせた！</span></label><a class="next-link" href="#q3">次は問題③へ <span aria-hidden="true">→</span></a></footer></article>
+<article aria-labelledby="q3-title" class="problem problem--final" data-problem="q3" id="q3">
+<header class="problem__header"><span class="number-box">03</span><div><p class="problem__type">基本問題 · append / len</p><h3 id="q3-title">アイテムを追加しよう</h3></div><span class="time-chip">約10分</span></header>
+<div class="problem__body"><p class="task-lead">アイテムリストに<strong>「ポーション」</strong>を追加して、持ち物が何個あるか数えよう。</p>
+<div class="task-instructions"><h4>作るプログラムの条件</h4><ol><li>問題①と同じ <code>items</code> のリストを作る</li><li><code>append()</code> を使い、<strong>「ポーション」</strong>を追加する</li><li>追加後のリスト全体を表示する</li><li><code>len()</code> を使って、アイテムの個数を表示する</li></ol></div>
+<div class="sample"><span class="sample__label">出力例</span><pre><code>['剣', '盾', '薬草', 'ポーション']
+アイテムの数：4個</code></pre></div>
+<div class="try-box"><span class="try-box__title">できたら試そう</span><p>さらに「地図」を追加してみよう。アイテムの数は何個になるかな？</p></div>
+<div class="hints"><details><summary>スタート用コードを見る（必要な人だけ）</summary><p>ここから始めてもOK。続きを自分で考えてみよう！</p><div class="code-with-action"><pre><code id="starter-q3">items = ["剣", "盾", "薬草"]
+
+# ここに追加する処理を書こう</code></pre><button class="copy-button" data-copy="starter-q3" type="button">コードをコピー</button></div></details><details><summary>ヒント①　追加する命令は？</summary><p><code>items.append("ポーション")</code> を使うと、リストの最後に「ポーション」が追加されるよ。</p></details><details><summary>ヒント②　何個あるか調べるには？</summary><p><code>len(items)</code> がアイテムの個数を表すよ。表示するときは、<code>print(f"アイテムの数：{len(items)}個")</code> と書ける。</p></details></div>
+</div><footer class="problem__footer"><label class="complete"><input data-complete="q3" type="checkbox"/><span>動かせた！</span></label><a class="next-link" href="#goal">今日のゴールへ <span aria-hidden="true">→</span></a></footer></article>
+<section aria-labelledby="goal-title" class="goal-complete" id="goal"><div aria-hidden="true" class="goal-icon">✓</div><div><p class="eyebrow">GOAL</p><h2 id="goal-title">基本3問ができれば、今日の目標達成！</h2><p>リストを「作る」「取り出す」「追加する」「数える」ができたね！ 余裕があれば、リストからランダムにアイテムが出るゲームを作ろう。</p><a class="button button--secondary" href="#practice">演習問題を見る ↓</a></div></section>
+<section aria-labelledby="practice-title" class="section-start challenges-title" id="practice"><p class="eyebrow">PRACTICE / 演習問題</p><h2 id="practice-title">ランダムな宝箱を作ろう！</h2><p>リストと <code>random.choice()</code>、条件分岐を組み合わせるよ。自分で考えて動かしてみよう。</p></section>
+<article aria-labelledby="q4-title" class="problem" data-problem="q4" id="q4">
+<header class="problem__header"><span class="number-box">04</span><div><p class="problem__type">演習問題 · リスト × random × if</p><h3 id="q4-title">ランダム宝箱を作ろう！</h3></div><span class="time-chip">約15分</span></header>
+<div class="problem__body"><p class="task-lead">宝箱を開けると、リストの中から<strong>ランダムに1つ</strong>アイテムが出てくるプログラムを作ろう。</p>
+<div class="task-instructions"><h4>作るプログラムの条件</h4><ol><li>リスト <code>items</code> に <strong>「剣」「盾」「薬草」「宝石」</strong>を入れる</li><li><code>random.choice(items)</code> でアイテムを1つ選ぶ</li><li>「宝箱から○○が出た！」と表示する</li><li><strong>「宝石」</strong>が出たときだけ「レアアイテム！」、それ以外なら「アイテムをゲット！」と表示する</li></ol></div>
+<div class="sample"><span class="sample__label">出力例（一例）</span><pre><code>宝箱から宝石が出た！
+レアアイテム！</code></pre><small>※出てくるアイテムは毎回変わるよ。宝石以外なら「アイテムをゲット！」と表示されればOK！</small></div>
+<div class="try-box"><span class="try-box__title">できたら試そう</span><p>何度も実行してみよう。「宝石」以外が出たときにも、正しく表示されるかな？</p></div>
+<div class="hints"><details><summary>スタート用コードを見る（必要な人だけ）</summary><p>このコードを動かしてから、条件分岐を追加しよう。</p><div class="code-with-action"><pre><code id="starter-q4">import random
+
+items = ["剣", "盾", "薬草", "宝石"]
+item = random.choice(items)
+print(f"宝箱から{item}が出た！")
+
+# ここに条件分岐を書こう</code></pre><button class="copy-button" data-copy="starter-q4" type="button">コードをコピー</button></div></details><details><summary>ヒント①　ランダムで選ぶには？</summary><p>最初に <code>import random</code> を書こう。<code>item = random.choice(items)</code> とすると、リストからランダムに選んだアイテムを <code>item</code> に入れられるよ。</p></details><details><summary>ヒント②　宝石だったらどうする？</summary><pre><code>if item == "宝石":
+    print("レアアイテム！")
+else:
+    print("アイテムをゲット！")</code></pre><p>この条件分岐を、ランダムに選んで表示したあとの行に追加してみよう。</p></details></div>
+</div><footer class="problem__footer"><label class="complete"><input data-complete="q4" type="checkbox"/><span>動かせた！</span></label><a class="next-link" href="#challenge">チャレンジ問題へ <span aria-hidden="true">→</span></a></footer></article>
+<section aria-labelledby="challenge-title" class="section-start challenges-title" id="challenge"><p class="eyebrow">CHALLENGE / 早く終わった人向け</p><h2 id="challenge-title">もっと改造してみよう！</h2><p>全部解く必要はないよ。気になる方を1つ選んで挑戦してみよう。</p></section>
+<article aria-labelledby="c1-title" class="problem challenge-card" data-problem="c1" id="c1">
+<header class="problem__header"><span class="number-box number-box--challenge">A</span><div><p class="problem__type">CHALLENGE ①</p><h3 id="c1-title">3連宝箱にしよう</h3></div></header>
+<div class="problem__body"><p class="task-lead">問題④の宝箱を改造して、<strong>1回の実行で3つのアイテム</strong>を手に入れよう。</p>
+<div class="task-instructions"><h4>条件</h4><ol><li><code>for</code> と <code>range()</code> で3回繰り返す</li><li>毎回 <code>random.choice(items)</code> でアイテムを選ぶ</li><li>「1回目：剣」のように、何回目かとアイテムを表示する</li></ol></div>
+<div class="sample"><span class="sample__label">出力例（一例）</span><pre><code>1回目：剣
+2回目：薬草
+3回目：宝石</code></pre><small>※どのアイテムが何回出るかはランダムだよ。</small></div>
+<div class="try-box"><span class="try-box__title">できたら試そう</span><p>宝石が出たときだけ「レア！」も表示できるかな？</p></div>
+<div class="hints"><details><summary>ヒント①　何を3回繰り返す？</summary><p><code>for i in range(3):</code> の内側に、<code>random.choice(items)</code> と表示の処理を書こう。</p></details><details><summary>ヒント②　何回目か表示するには？</summary><p><code>i</code> は0から始まるよ。<code>print(f"{i + 1}回目：{item}")</code> を使おう。</p></details></div>
+</div><footer class="problem__footer"><label class="complete"><input data-complete="c1" type="checkbox"/><span>できた！</span></label><a class="next-link" href="#c2">次のチャレンジへ <span aria-hidden="true">→</span></a></footer></article>
+<article aria-labelledby="c2-title" class="problem challenge-card" data-problem="c2" id="c2">
+<header class="problem__header"><span class="number-box number-box--challenge">B</span><div><p class="problem__type">CHALLENGE ②</p><h3 id="c2-title">オリジナルキャラクターを作ろう</h3></div></header>
+<div class="problem__body"><p class="task-lead">2つのリストを使って、<strong>名前と職業をランダムに組み合わせたキャラクター</strong>を作ろう。</p>
+<div class="task-instructions"><h4>条件</h4><ol><li>名前のリスト <code>names</code> を作る（例：ルナ、カイ、ソラ）</li><li>職業のリスト <code>jobs</code> を作る（例：剣士、魔法使い、忍者）</li><li>それぞれのリストから1つずつランダムに選ぶ</li><li>選んだ名前と職業を合わせて表示する</li></ol></div>
+<div class="sample"><span class="sample__label">出力例（一例）</span><pre><code>名前：ルナ
+職業：忍者</code></pre><small>※出てくる組み合わせは毎回変わるよ。</small></div>
+<div class="try-box"><span class="try-box__title">できたら試そう</span><p>名前や職業を好きなものに変えて、自分だけのキャラクター生成プログラムにしよう。</p></div>
+<div class="hints"><details><summary>ヒント①　リストを2つ作ろう</summary><pre><code>names = ["ルナ", "カイ", "ソラ"]
+jobs = ["剣士", "魔法使い", "忍者"]</code></pre><p>自分で別の名前・職業を考えてもOK！</p></details><details><summary>ヒント②　2回ランダムに選ぼう</summary><p><code>name = random.choice(names)</code> と <code>job = random.choice(jobs)</code> のように、それぞれ選ぼう。最後に <code>print(f"名前：{name}")</code> などで表示しよう。</p></details></div>
+</div><footer class="problem__footer"><label class="complete"><input data-complete="c2" type="checkbox"/><span>できた！</span></label><a class="next-link" href="#help">困ったときは <span aria-hidden="true">→</span></a></footer></article>
+<section aria-labelledby="help-title" class="help-section section-card" id="help"><div class="section-label">SUPPORT</div><h2 id="help-title">困ったときは</h2><p>まずは自分で考えて、実行して、結果やエラーを確認しよう。それでも分からなければTechNexusのAIサポートに質問してみよう。</p><div class="help-grid"><div><strong>エラーが出たら</strong><p>「このエラーはどういう意味？」</p></div><div><strong>思った結果にならないとき</strong><p>「リストのどこを直したらいいか、ヒントがほしい」</p></div><div><strong>答えが分からないとき</strong><p>「答えを全部教えずに、最初の一歩だけ教えて」</p></div></div></section></div>
+<aside aria-label="学習の進み具合と目次" class="sidebar">
+<section aria-labelledby="progress-title" class="progress-card"><p class="eyebrow">YOUR PROGRESS</p><h2 id="progress-title">基本問題の進み具合</h2><div class="progress-count"><strong id="basicCount">0</strong><span> / 3問</span></div><div aria-label="基本問題の進捗" aria-valuemax="3" aria-valuemin="0" aria-valuenow="0" class="progress-track" id="progressBar" role="progressbar"><span id="progressFill"></span></div><p class="progress-message" id="progressMessage">1問ずつ、できたらチェックを入れよう！</p><p class="progress-note">※チェックは自分で付ける方式です。この端末のブラウザに記録されます。</p></section>
+<section aria-labelledby="toc-title" class="toc-card"><h2 id="toc-title">問題を選ぶ</h2>
+<a href="#review">リストの復習</a><a href="#q1"><span>01</span> アイテムリストを作る</a><a href="#q2"><span>02</span> アイテムを取り出す</a><a href="#q3"><span>03</span> アイテムを追加する</a><div class="toc-divider"></div><a href="#goal">基本問題のゴール</a><a href="#q4"><span>04</span> ランダム宝箱</a><div class="toc-divider"></div><a href="#c1"><span>A</span> 3連宝箱</a><a href="#c2"><span>B</span> キャラクター生成</a><div class="toc-divider"></div><a href="#help">困ったときは</a>
+</section>
+</aside>
+</div>
+<footer class="site-footer"><p>Python｜コーディング自習課題</p><a href="#main">ページの先頭にもどる ↑</a></footer>
+</main>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+</body></html>
